@@ -1,4 +1,4 @@
-function setScreenshotUrl(pageInfo, imgURL) {
-
-    $("#result-table > tbody:last").after("<tr><td>" + pageInfo + "</td><td><img src=" + url + "></td></tr>");
+function addScreenShot(pageInfo, imgURL) {
+    var desc = pageInfo["height"] + " * " + pageInfo["width"];
+    $("#result-table > tbody:last").after("<tr><td>" + desc + "</td><td><img src=" + imgURL + "></td></tr>");
 }
